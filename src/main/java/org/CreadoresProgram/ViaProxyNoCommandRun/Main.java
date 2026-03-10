@@ -1,4 +1,4 @@
-package org.CreadoresProgram.ViaProxyPterodactyl;
+package org.CreadoresProgram.ViaProxyNoCommandRun;
 import java.io.File;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -17,6 +17,8 @@ public class Main{
     }
   }
   public static String[] getArgsVP(){
-    //if config or not
+    File file = new File(System.getProperty("user.dir") + "/viaproxy.yml");
+    if(){}
+    return new String[]{ "cli" };
   }
 }
