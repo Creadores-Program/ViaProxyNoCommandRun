@@ -19,7 +19,7 @@ public class Main{
   public static String[] getArgsVP(){
     File file = new File(System.getProperty("user.dir") + "/viaproxy.yml");
     if(!file.exists()){
-      return new String[]{ "cli", "" };
+      return new String[]{ "config", "viaproxy.yml" };
     }
     return new String[]{ "cli" };
   }
