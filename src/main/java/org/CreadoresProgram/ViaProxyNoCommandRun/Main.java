@@ -8,7 +8,7 @@ public class Main{
     try{
       File file = new File(System.getProperty("user.dir") + "/ViaProxy.jar");
       URL url = file.toURI().toURL();
-      URLClassLoader child = new URLClassLoader(new URL[] { url }, JarLoader.class.getClassLoader());
+      URLClassLoader child = new URLClassLoader(new URL[] { url }, Main.class.getClassLoader());
       Class<?> classToLoad = Class.forName("net.raphimc.viaproxy.ViaProxy", true, child);
       Method method = classToLoad.getDeclaredMethod("main", String[].class);
       method.invoke(null, (Object) getArgsVP());
